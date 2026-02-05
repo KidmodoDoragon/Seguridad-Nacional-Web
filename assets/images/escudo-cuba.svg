@@ -1,37 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
-  <!-- Shield background shape -->
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
     </linearGradient>
   </defs>
   
-  <!-- Shield shape -->
-  <path d="M 100 20 L 160 60 L 160 140 Q 100 200 100 200 Q 100 200 40 140 L 40 60 Z" 
-        fill="url(#shieldGradient)" stroke="#fff" stroke-width="2"/>
+  <!-- Hexagon shape -->
+  <polygon points="100,30 160,65 160,135 100,170 40,135 40,65" 
+           fill="url(#hexGradient)" stroke="#808080" stroke-width="2.5"/>
   
-  <!-- Cuban flag stripes inside shield -->
-  <!-- Blue stripes -->
-  <rect x="50" y="70" width="30" height="35" fill="#1e3a8a"/>
-  <rect x="50" y="115" width="30" height="35" fill="#1e3a8a"/>
-  
-  <!-- White stripes -->
-  <rect x="85" y="70" width="30" height="35" fill="#ffffff"/>
-  <rect x="85" y="115" width="30" height="35" fill="#ffffff"/>
-  
-  <!-- Red stripe (triangle in center) -->
-  <polygon points="100,75 120,85 100,95" fill="#dc2626"/>
-  <rect x="85" y="105" width="30" height="10" fill="#dc2626"/>
-  
-  <!-- Star (Estrella Solitaria) -->
-  <g transform="translate(100, 120)">
-    <polygon points="0,-12 3.6,-3.6 12,-3.6 4.8,2.4 7.2,12 0,7.2 -7.2,12 -4.8,2.4 -12,-3.6 -3.6,-3.6" 
-             fill="#fbbf24" stroke="#f59e0b" stroke-width="0.5"/>
+  <!-- White 5-pointed star in center -->
+  <g transform="translate(100, 100)">
+    <polygon points="0,-25 7.5,-7.5 26,-7.5 10,5 15,25 0,12.5 -15,25 -10,5 -26,-7.5 -7.5,-7.5" 
+             fill="#ffffff" stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round"/>
   </g>
-  
-  <!-- White border -->
-  <path d="M 100 20 L 160 60 L 160 140 Q 100 200 100 200 Q 100 200 40 140 L 40 60 Z" 
-        fill="none" stroke="#ffffff" stroke-width="2"/>
 </svg>
