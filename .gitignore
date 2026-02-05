@@ -35,6 +35,10 @@ build/
 config.local.json
 secrets.*
 
+# Documentos de trabajo
+Contenido.md
+Estructura.md
+
 # Archivos de respaldo
 *.backup
 *.orig
