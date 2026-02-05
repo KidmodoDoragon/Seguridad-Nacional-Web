@@ -234,6 +234,20 @@
 
 				});
 
+	// Menu close button.
+		var $closeMenuBtn = $('#close-menu');
+		
+		$closeMenuBtn.on('click', function(e) {
+			e.preventDefault();
+			var $body = $('body');
+			var $sidebar = $('#sidebar');
+			
+			// Toggle sidebar visibility by simulating the toggle button click
+			if ($body.hasClass('sidebar-visible')) {
+				$sidebar.find('.closer').click();
+			}
+		});
+
 	// Menu.
 		var $menu = $('#menu'),
 			$menu_openers = $menu.children('ul').find('.opener');

@@ -2225,6 +2225,24 @@ button,
   overflow-x: hidden;
 }
 
+/* Sticky Menu Toggle */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
+/* Close Menu Button */
+#close-menu {
+  transition: all 0.3s ease;
+}
+
+#close-menu:hover {
+  color: #f56a6a;
+  transform: scale(1.2);
+}
+
 /* Smooth Scroll */
 html {
   scroll-behavior: smooth;
