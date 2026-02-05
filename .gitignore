@@ -1,0 +1,45 @@
+# Dependencias y módulos
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Archivos del sistema operativo
+Thumbs.db
+.DS_Store
+.directory
+
+# Archivos temporales
+*.tmp
+*.log
+*.bak
+
+# Compilados/Generados
+dist/
+build/
+*.min.js
+*.min.css
+
+# Archivos sensibles
+.env
+.env.local
+config.local.json
+secrets.*
+
+# Archivos de respaldo
+*.backup
+*.orig
+
+# IDEs
+.vscode/
+.idea/
+*.iml
