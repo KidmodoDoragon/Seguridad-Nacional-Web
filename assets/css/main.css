@@ -2198,7 +2198,13 @@ button,
   transition: all 0.3s ease;
   padding-left: 0.5em; }
   
-#menu ul a:hover, #menu ul span:hover {
+#menu ul a:hover, #menu ul span:hover,
+#menu ul a.opener:hover, #menu ul span.opener:hover {
+  color: #f56a6a;
+  padding-left: 1em;
+  text-shadow: 0 0 10px rgba(245, 106, 106, 0.3); }
+
+#menu ul a.opener.active, #menu ul span.opener.active {
   color: #f56a6a;
   padding-left: 1em;
   text-shadow: 0 0 10px rgba(245, 106, 106, 0.3); }
@@ -2210,6 +2216,13 @@ button,
 #menu ul a.opener:before, #menu ul span.opener:before {
   transition: all 0.3s ease;
   transform-origin: center;
+}
+
+/* Sidebar Independent Scroll */
+#sidebar .inner {
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Smooth Scroll */
@@ -2281,6 +2294,8 @@ section img:hover {
         position: absolute;
         right: 0; }
       #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
+        color: #f56a6a; }
+      #menu ul a.opener.active:before, #menu ul span.opener.active:before {
         color: #f56a6a; }
       #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
         display: block; }
