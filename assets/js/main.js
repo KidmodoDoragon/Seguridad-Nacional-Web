@@ -234,18 +234,11 @@
 
 				});
 
-	// Menu close button.
-		var $closeMenuBtn = $('#close-menu');
-		
-		$closeMenuBtn.on('click', function(e) {
+	// Menu toggle using title click.
+		$('#menu-toggle-label').on('click', function(e) {
 			e.preventDefault();
-			var $body = $('body');
-			var $sidebar = $('#sidebar');
-			
-			// Toggle sidebar visibility by simulating the toggle button click
-			if ($body.hasClass('sidebar-visible')) {
-				$sidebar.find('.closer').click();
-			}
+			e.stopPropagation();
+			$('#sidebar').toggleClass('inactive');
 		});
 
 	// Menu.
