@@ -259,4 +259,26 @@
 
 			});
 
+	// Smooth Scroll Navigation
+		$('a[href^="#"]').on('click', function(e) {
+			
+			var target = $(this).attr('href');
+			
+			// Skip empty hash
+			if (target === '#') {
+				return;
+			}
+			
+			var $target = $(target);
+			
+			if ($target.length) {
+				e.preventDefault();
+				
+				$('html, body').animate({
+					scrollTop: $target.offset().top - 80
+				}, 1000, 'swing');
+			}
+			
+		});
+
 })(jQuery);

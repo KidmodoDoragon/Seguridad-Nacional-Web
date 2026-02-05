@@ -2192,6 +2192,43 @@ button,
   #footer .copyright a {
     color: inherit; }
 
+/* Enhanced Menu Styling */
+#menu ul a, #menu ul span {
+  position: relative;
+  transition: all 0.3s ease;
+  padding-left: 0.5em; }
+  
+#menu ul a:hover, #menu ul span:hover {
+  color: #f56a6a;
+  padding-left: 1em;
+  text-shadow: 0 0 10px rgba(245, 106, 106, 0.3); }
+
+#menu ul a.opener, #menu ul span.opener {
+  transition: all 0.3s ease;
+}
+
+#menu ul a.opener:before, #menu ul span.opener:before {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section Image Animations */
+section img {
+  transition: all 0.4s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(245, 106, 106, 0.2);
+}
+
 /* Menu */
 #menu ul {
   -moz-user-select: none;
