@@ -39,6 +39,9 @@ secrets.*
 Contenido.md
 Estructura.md
 
+# Imágenes no versionadas
+images/la-cultura-fisica-y-la-seguridad-nacional-01.jpg
+
 # Archivos de respaldo
 *.backup
 *.orig
