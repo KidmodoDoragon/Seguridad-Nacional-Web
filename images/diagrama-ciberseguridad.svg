@@ -1,0 +1,118 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo degradado -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1428;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a3a52;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1000" height="700" fill="url(#bgGradient)"/>
+  
+  <!-- Título -->
+  <text x="500" y="50" font-size="36" font-weight="bold" text-anchor="middle" fill="#ffd700">
+    Protección Digital de Datos Económicos
+  </text>
+  
+  <!-- Línea separadora -->
+  <line x1="100" y1="70" x2="900" y2="70" stroke="#ffd700" stroke-width="2" opacity="0.5"/>
+  
+  <!-- ESCUDO CENTRAL (Brillante) -->
+  <g filter="url(#glow)">
+    <!-- Escudo grande -->
+    <path d="M 500 150 Q 450 180 450 260 Q 450 380 500 450 Q 550 380 550 260 Q 550 180 500 150" 
+          fill="#ffd700" opacity="0.9" stroke="#ffed4e" stroke-width="3"/>
+    
+    <!-- Destello en escudo -->
+    <ellipse cx="480" cy="260" rx="25" ry="40" fill="#ffff99" opacity="0.4"/>
+    
+    <!-- Símbolo de candado -->
+    <rect x="485" y="280" width="30" height="35" fill="none" stroke="#0a1428" stroke-width="2" rx="2"/>
+    <path d="M 495 280 Q 495 270 500 270 Q 505 270 505 280" fill="none" stroke="#0a1428" stroke-width="2"/>
+    <circle cx="500" cy="305" r="4" fill="#0a1428"/>
+  </g>
+  
+  <!-- CÓDIGO BINARIO (Cascada izquierda) -->
+  <g opacity="0.7">
+    <text x="150" y="200" font-size="24" font-family="monospace" fill="#00ff00">01101011</text>
+    <text x="120" y="240" font-size="24" font-family="monospace" fill="#00ff00">11010101</text>
+    <text x="140" y="280" font-size="24" font-family="monospace" fill="#00ff00">10101100</text>
+    <text x="110" y="320" font-size="24" font-family="monospace" fill="#00ff00">01001101</text>
+    <text x="130" y="360" font-size="24" font-family="monospace" fill="#00ff00">11110000</text>
+    <text x="140" y="400" font-size="24" font-family="monospace" fill="#00ff00">10100111</text>
+    
+    <!-- Líneas conectoras al escudo -->
+    <line x1="200" y1="250" x2="450" y2="280" stroke="#00ff00" stroke-width="1" opacity="0.5"/>
+    <line x1="180" y1="320" x2="450" y2="350" stroke="#00ff00" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- MONEDA DIGITAL (Cascada derecha) -->
+  <g opacity="0.7">
+    <circle cx="800" cy="200" r="25" fill="#ffaa00" opacity="0.6" stroke="#ffd700" stroke-width="2"/>
+    <text x="800" y="210" font-size="24" font-weight="bold" text-anchor="middle" fill="#fff">$</text>
+    
+    <circle cx="830" cy="260" r="20" fill="#ffaa00" opacity="0.6" stroke="#ffd700" stroke-width="2"/>
+    <text x="830" y="268" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">$</text>
+    
+    <circle cx="800" cy="320" r="22" fill="#ffaa00" opacity="0.6" stroke="#ffd700" stroke-width="2"/>
+    <text x="800" y="328" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">$</text>
+    
+    <circle cx="870" cy="350" r="18" fill="#ffaa00" opacity="0.6" stroke="#ffd700" stroke-width="2"/>
+    <text x="870" y="357" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">$</text>
+    
+    <!-- Líneas conectoras al escudo -->
+    <line x1="800" y1="225" x2="550" y2="280" stroke="#ffaa00" stroke-width="1" opacity="0.5"/>
+    <line x1="800" y1="340" x2="550" y2="380" stroke="#ffaa00" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- MÓDULOS DE DEFENSA -->
+  <g>
+    <!-- Redundancia -->
+    <rect x="100" y="500" width="160" height="110" fill="#1abc9c" opacity="0.7" rx="5" stroke="#16a085" stroke-width="2"/>
+    <circle cx="130" cy="530" r="12" fill="#00ff00" opacity="0.8"/>
+    <circle cx="160" cy="530" r="12" fill="#00ff00" opacity="0.8"/>
+    <circle cx="190" cy="530" r="12" fill="#00ff00" opacity="0.8"/>
+    <text x="180" y="560" font-size="13" font-weight="bold" fill="white" text-anchor="end">Copias de</text>
+    <text x="180" y="578" font-size="13" font-weight="bold" fill="white" text-anchor="end">Seguridad</text>
+    <text x="180" y="595" font-size="12" fill="#fff" text-anchor="end">Redundantes</text>
+  </g>
+  
+  <g>
+    <!-- Encriptación -->
+    <rect x="420" y="500" width="160" height="110" fill="#9b59b6" opacity="0.7" rx="5" stroke="#8e44ad" stroke-width="2"/>
+    <circle cx="450" cy="530" r="8" fill="#ffff00" opacity="0.8"/>
+    <circle cx="470" cy="525" r="6" fill="#ffff00" opacity="0.8"/>
+    <circle cx="490" cy="535" r="7" fill="#ffff00" opacity="0.8"/>
+    <text x="500" y="560" font-size="13" font-weight="bold" fill="white">Encriptación</text>
+    <text x="500" y="578" font-size="13" font-weight="bold" fill="white">AES-256</text>
+    <text x="500" y="595" font-size="12" fill="#fff">Máxima seguridad</text>
+  </g>
+  
+  <g>
+    <!-- Autonomía -->
+    <rect x="740" y="500" width="160" height="110" fill="#e74c3c" opacity="0.7" rx="5" stroke="#c0392b" stroke-width="2"/>
+    <rect x="760" y="530" width="30" height="30" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="2"/>
+    <circle cx="780" cy="550" r="5" fill="#fff"/>
+    <circle cx="795" cy="540" r="5" fill="#fff"/>
+    <text x="840" y="575" font-size="13" font-weight="bold" fill="white" text-anchor="end">Sistemas</text>
+    <text x="840" y="593" font-size="13" font-weight="bold" fill="white" text-anchor="end">Autónomos</text>
+    <text x="840" y="610" font-size="12" fill="#fff" text-anchor="end">Sin dependencia</text>
+  </g>
+  
+  <!-- Texto central descriptor -->
+  <text x="500" y="470" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffd700">
+    ESCUDO DIGITAL PROTEGIENDO INFRAESTRUCTURA ECONÓMICA
+  </text>
+  
+  <!-- Footer -->
+  <text x="500" y="670" font-size="13" text-anchor="middle" fill="#aaa" font-style="italic">
+    Capas de protección: Sin vulnerabilidades críticas en caso de ataque cibernético o sabotaje
+  </text>
+</svg>
